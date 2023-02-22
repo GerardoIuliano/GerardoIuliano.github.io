@@ -99,7 +99,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: darkslategray;
 }
 
 .overlay-mf {
@@ -110,6 +110,7 @@ a:hover {
   height: 100%;
   width: 100%;
   opacity: 0.7;
+  color: white;
 }
 
 .paralax-mf {
@@ -158,6 +159,7 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: white;
 }
 
 .subtitle-a {
@@ -843,6 +845,11 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.centerImg {
+  alignment: center;
+  background-color: #0a53be;
+}
+
 .about-mf .about-img img {
   margin-left: 10px;
 }
@@ -938,7 +945,7 @@ a:hover {
   height: 60px;
   width: 60px;
   line-height: 1.5;
-  box-shadow: 0 0 0 10px #cde1f8;
+  box-shadow: 0 0 0 10px #ffffff;
 }
 
 .counter-num .counter {
@@ -1465,9 +1472,9 @@ a:hover {
 --------------------------------------------------------------*/
 footer {
   text-align: center;
-  color: #fff;
+  color: #000000;
   padding: 25px 0;
-  background: #0062d3;
+  background: #ffffff;
 }
 
 footer .copyright {

@@ -30,7 +30,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="calculateAge()" style="background-color: #090909">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -78,43 +78,18 @@
           <div class="col-sm-12">
             <div class="box-shadow-full">
               <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Gerardo Iuliano</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Student</span></p>
-                        <p><span class="title-s">Email: </span> <span>gerardoiuliano99@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>+39 3891872977</span></p>
-                      </div>
-                    </div>
+                <div class="col-md-4">
+                  <div class="about-img">
+                    <img src="assets/img/testimonial-2.jpg" class="centerImg" alt="">
                   </div>
-                  <div class="skill-mf">
-                    <p class="title-s">Skill</p>
-                    <span>HTML</span> <span class="pull-right">85%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>CSS3</span> <span class="pull-right">75%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>PHP</span> <span class="pull-right">50%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="about-info">
+                    <p><span class="title-s">Name: </span> <span>Gerardo Iuliano</span></p>
+                    <p><span class="title-s">Age: </span> <span onload="calculateAge()" id="age"></span></p>
+                    <p><span class="title-s">Email: </span> <span>gerardoiuliano99@gmail.com</span></p>
+                    <p><span class="title-s">Phone: </span> <span>+39 3891872977</span></p>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                   <div class="about-me pt-4 pt-md-0">
                     <div class="title-box-2">
                       <h5 class="title-left">
@@ -425,78 +400,6 @@
             </div>
           </div>
 
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Xavi Alonso</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img src="assets/img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Marta Socrate</span>
-                    </div>
-                    <div class="content-test">
-                      <p class="description lead">
-                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
-          </div>
-        </div>
-      </div>
-    </div><!-- End Testimonials Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Blog
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
@@ -528,6 +431,29 @@
               </div>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Blog
+              </h3>
+              <p class="subtitle-a">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
@@ -595,55 +521,26 @@
     </section><!-- End Blog Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" >
       <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Contact
+              </h3>
+              <p class="subtitle-a">
+                I hate callcenter, be carefull
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-12">
             <div class="contact-mf">
               <div id="contact" class="box-shadow-full">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
                       <h5 class="title-left">
@@ -654,18 +551,10 @@
                       <p class="lead">
                       </p>
                       <ul class="list-ico">
-                        <li><span class="bi bi-phone"></span> (+39) 389 187 2977</li>
-                        <li><span class="bi bi-envelope"></span> gerardoiuliano99@gmail.com</li>
-                        <li><span class="bi bi-github"></span> <a href="https://github.com/GerardoIuliano"> https://github.com/GerardoIuliano </a></li>
-                        <li><span class="bi bi-linkedin"></span> <a href="#"> Linkedin </a></li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><span class="bi bi-phone"></span>     <a> (+39) 389 187 2977</a></li>
+                        <li><span class="bi bi-envelope"></span>  <a> gerardoiuliano99@gmail.com</a></li>
+                        <li><span class="bi bi-github"></span>    <a href="https://github.com/GerardoIuliano"> GerardoIuliano </a></li>
+                        <li><span class="bi bi-instagram"></span> <a href="https://instagram.com/gerardo__iuliano"> gerardo__iuliano </a></li>
                       </ul>
                     </div>
                   </div>
@@ -686,13 +575,8 @@
         <div class="col-sm-12">
           <div class="copyright-box">
             <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              <span>Autorizzo il trattamento dei miei dati personali ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 e del GDPR (Regolamento UE 2016/679).</span>
+              <img style="width: 150px; height: auto; margin-bottom: 8px; margin-left: 10px" src="assets/img/Firma.png">
             </div>
           </div>
         </div>
@@ -713,7 +597,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/extra.js"></script>
+  <script>
+    function calculateAge() {
+      var today = new Date();
+      var birthDate = new Date("1999/03/18");
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+      }
+      document.getElementById("age").innerHTML = age;
+    }
+  </script>
 </body>
 
 </html>
