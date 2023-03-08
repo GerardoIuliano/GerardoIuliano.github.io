@@ -30,7 +30,7 @@
   ======================================================== -->
 </head>
 
-<body onload="calculateAge()" style="background-color: #090909">
+<body onload="calculateAge(), getHeight()" style="background-color: #090909">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -44,8 +44,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
+          <li><a class="nav-link scrollto" href="#services">Timeline</a></li>
+          <li><a class="nav-link scrollto" href="#work">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -86,6 +86,7 @@
                     <p><span class="title-s">Name: </span> <span>Gerardo Iuliano</span></p>
                     <p><span class="title-s">Age: </span> <span onload="calculateAge()" id="age"></span></p>
                     <p><span class="title-s">Email: </span> <span>gerardoiuliano99@gmail.com</span></p>
+                    <p><span class="title-s">Address: </span> <span>Nusco (AV), Italy</span></p>
                     <p><span class="title-s">Phone: </span> <span>+39 3891872977</span></p>
                   </div>
                 </div>
@@ -97,21 +98,14 @@
                       </h5>
                     </div>
                     <p class="lead">
-                      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-                      imperdiet et, porttitor
-                      at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                      porttitor accumsan tincidunt.
+                      I am a Computer Science student at the University of Salerno.
                     </p>
                     <p class="lead">
-                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                      porttitor volutpat. Vestibulum
-                      ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                      I developed interest towards this field during high school thanks to my computer science teacher. I have cultivated over time
+                      this passion enriching my cultural baggage.
                     </p>
                     <p class="lead">
-                      Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                      Nulla porttitor accumsan
-                      tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                    </p>
+                      I have a positive attitude, will and motivation in learning new technologies.                    </p>
                   </div>
                 </div>
               </div>
@@ -145,16 +139,16 @@
               </div>
               <div class="service-content">
                 <h2 class="s-title"> MASTER DEGREE </h2>
-                <h4 class="s-description"> Software Engineering & IT Management </h4>
+                <h4 class="s-description"> Software Engineering and IT Management </h4>
                 <h6 class="s-description"> University of Salerno Set 2021 - Now </h6>
                 <p class="s-description text-center">
-                  Thesis's title:
+                  <b>Thesis's title:</b>
                 </p>
                 <p class="s-description text-center">
-                  Advisor:
+                  <b>Advisor:</b>
                 </p>
                 <p class="s-description text-center">
-                  Grade:
+                  <b>Grade:</b>
                 </p>
               </div>
             </div>
@@ -169,14 +163,14 @@
                 <h4 class="s-description"> Computer Science </h4>
                 <h6 class="s-description"> University of Salerno Set 2018 - Dec 2021 </h6>
                 <p class="s-description text-center">
-                  Thesis's title: "Identification of molecular biomarkers to improve
+                  <b>Thesis's title:</b> "Identification of molecular biomarkers to improve
                   diagnosing and monitoring the progression of Parkinson's"
                 </p>
                 <p class="s-description text-center">
-                  Advisor: Prof. Risi Michele
+                  <b>Advisor:</b> Prof. Risi Michele
                 </p>
                 <p class="s-description text-center">
-                  Grade: 105/110
+                  <b>Grade:</b> 105/110
                 </p>
               </div>
             </div>
@@ -186,6 +180,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Counter Section ======= -->
+    <!--
     <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
       <div class="overlay-mf"></div>
       <div class="container position-relative">
@@ -236,7 +231,9 @@
           </div>
         </div>
       </div>
-    </div><!-- End Counter Section -->
+    </div>
+    -->
+    <!-- End Counter Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
@@ -248,195 +245,169 @@
                 Portfolio
               </h3>
               <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Some works
               </p>
               <div class="line-mf"></div>
             </div>
           </div>
         </div>
         <div class="row">
+          <!-- Work# -->
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="portfolio-salernoAmica.html">
                 <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+                  <img src="assets/img/logoSA.png" alt="" class="img-fluid">
                 </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h2 class="w-title">SalernoAmica</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Cross Platform Application</span><br>
+                        <span class="w-date">Feb. 2023</span>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                    <div class="col-sm-2">
 
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Travel</h6>
+                    </div>
                   </div>
                 </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
+              </a>
             </div>
           </div>
+          <!-- End Work# -->
+          <!-- Work# -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio-coralloSmart.html">
+                <div class="work-img">
+                  <img src="assets/img/logoCoralloSmart.png" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h2 class="w-title">CoralloSmart</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Application</span><br>
+                        <span class="w-date">Gen. 2023</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
 
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End Work# -->
+          <!-- Work# -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio-dart.html">
+              <div class="work-img">
+                  <img src="assets/img/darts.png" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h2 class="w-title">D.A.R.T.S. 2.0</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Intellij Plug-in</span><br>
+                        <span class="w-date">Jun. 2022</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End Work# -->
+          <!-- Work# -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio-compiler.html">
+                <div class="work-img">
+                  <img src="assets/img/compiler.png" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h2 class="w-title">MyCompiler</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Front-end Compiler</span><br>
+                        <span class="w-date">Gen. 2022</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End Work# -->
+          <!-- Work# -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio-greenstar.html">
+                <div class="work-img">
+                  <img src="assets/img/logoGS.png" alt="" class="img-fluid imgSize">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h2 class="w-title">GreenStar</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Android Application</span><br>
+                        <span class="w-date">Jun. 2021</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End Work# -->
+          <!-- Work# -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="portfolio-sorrentoMarina.html">
+                <div class="work-img">
+                  <img src="assets/img/sorrentoMarina.png" alt="" class="img-fluid">
+                </div>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-10">
+                      <h2 class="w-title">SorrentoMarina</h2>
+                      <div class="w-more">
+                        <span class="w-ctegory">Web Application</span><br>
+                        <span class="w-date">Gen. 2021</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- End Work# -->
         </div>
       </div>
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Blog Section ======= -->
+    <!--
     <section id="blog" class="blog-mf sect-pt4 route">
       <div class="container">
         <div class="row">
@@ -518,7 +489,9 @@
           </div>
         </div>
       </div>
-    </section><!-- End Blog Section -->
+    </section>
+    -->
+    <!-- End Blog Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" >
@@ -554,6 +527,7 @@
                         <li><span class="bi bi-phone"></span>     <a> (+39) 389 187 2977</a></li>
                         <li><span class="bi bi-envelope"></span>  <a> gerardoiuliano99@gmail.com</a></li>
                         <li><span class="bi bi-github"></span>    <a href="https://github.com/GerardoIuliano"> GerardoIuliano </a></li>
+                        <li><span class="bi bi-linkedin"></span> <a href="https://www.linkedin.com/in/gerardo-iuliano/"> Gerardo Iuliano </a></li>
                         <li><span class="bi bi-instagram"></span> <a href="https://instagram.com/gerardo__iuliano"> gerardo__iuliano </a></li>
                       </ul>
                     </div>
@@ -565,7 +539,11 @@
         </div>
       </div>
     </section><!-- End Contact Section -->
+    <div style="background-color: #000000; alignment: right">
+     <div id="counter" style="float:right; width: 20px; margin-left: -200px;">
 
+     </div>
+    </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -576,7 +554,7 @@
           <div class="copyright-box">
             <div class="credits">
               <span>Autorizzo il trattamento dei miei dati personali ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 e del GDPR (Regolamento UE 2016/679).</span>
-              <img style="width: 150px; height: auto; margin-bottom: 8px; margin-left: 10px" src="assets/img/Firma.png">
+              <img style="width: 150px; height: auto; margin-bottom: 14px; margin-left: 20px" src="assets/img/Firma.png">
             </div>
           </div>
         </div>
@@ -588,27 +566,22 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/js/jquery-3.6.4.min.js"></script>
+
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-    function calculateAge() {
-      var today = new Date();
-      var birthDate = new Date("1999/03/18");
-      var age = today.getFullYear() - birthDate.getFullYear();
-      var m = today.getMonth() - birthDate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-      }
-      document.getElementById("age").innerHTML = age;
-    }
-  </script>
+  <script src="assets/js/utils.js"></script>
+
+
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+
 </body>
 
 </html>

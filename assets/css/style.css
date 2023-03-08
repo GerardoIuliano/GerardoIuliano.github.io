@@ -8,9 +8,21 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family:  "Hack";
+  src: url(hacked-font/Hacked-KerX.ttf);
+}
+@font-face {
+  font-family:  "Code";
+  src: url(modeseven-font/Modeseven-L3n5.ttf);
+}
+
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
+
+  font-family: "Code";
 }
 
 h1,
@@ -20,6 +32,8 @@ h4,
 h5,
 h6 {
   color: #1e1e1e;
+  font-family: "Hack";
+
 }
 
 a {
@@ -88,8 +102,8 @@ a:hover {
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
+  background-size: contain;
+  background-position: top left;
 }
 
 @media (max-width: 1024px) {
@@ -99,7 +113,8 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: darkslategray;
+  background-color: #000000;
+  backdrop-filter: blur(10px);
 }
 
 .overlay-mf {
@@ -110,7 +125,7 @@ a:hover {
   height: 100%;
   width: 100%;
   opacity: 0.7;
-  color: white;
+  color: #ffffff;
 }
 
 .paralax-mf {
@@ -957,10 +972,15 @@ a:hover {
 # Portfolio
 --------------------------------------------------------------*/
 .work-box {
+  border-radius: 15px;
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  margin: 25px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .work-box:hover img {
@@ -968,8 +988,15 @@ a:hover {
 }
 
 .work-img {
-  display: block;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centering y-axis */
+  align-items :center; /* Centering x-axis */
   overflow: hidden;
+  background-color: white;
+  padding: 15px;
+  height: 320px;
 }
 
 .work-img img {
@@ -977,7 +1004,7 @@ a:hover {
 }
 
 .work-content {
-  padding: 2rem 3% 1rem 4%;
+  padding: 1rem 3% 1rem 4%;
 }
 
 .work-content .w-more {
