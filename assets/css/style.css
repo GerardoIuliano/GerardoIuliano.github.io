@@ -114,7 +114,6 @@ a:hover {
 
 .overlay-mf {
   background-color: #000000;
-  backdrop-filter: blur(10px);
 }
 
 .overlay-mf {
@@ -1514,4 +1513,21 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# background header detail page
+--------------------------------------------------------------*/
+
+.blur{
+  backdrop-filter: blur(12px);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  color: #ffffff;
 }
