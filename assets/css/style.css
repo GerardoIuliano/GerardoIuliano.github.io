@@ -20,21 +20,28 @@
 
 body {
   background-color: #f5f5f5;
-  color: #4e4e4e;
-
-  font-family: "Code";
+  color: #000000;
+  font-family: "Sulphur Point";
 }
 
+.dark-mode{
+  background-color: #000000;
+  color: #f5f5f5;
+  font-family: "Sulphur Point";
+}
+#icon-mode{
+  color: white;
+}
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
-  font-family: "Hack";
+  color: #000000;
+  font-family: "Sulphur Point";
 
 }
+
 
 a {
   color: #1e1e1e;
@@ -63,7 +70,7 @@ a:hover {
 
 .color-text-a {
   text-decoration: none;
-  color: #4e4e4e;
+  color: #000000;
 }
 
 .box-shadow,
@@ -159,7 +166,7 @@ a:hover {
 /*--/ Title s /--*/
 .title-s {
   font-weight: 600;
-  color: #1e1e1e;
+  color: #000000;
   font-size: 1.1rem;
 }
 
@@ -172,13 +179,12 @@ a:hover {
   text-decoration: none;
   font-size: 3rem;
   font-weight: bold;
-  text-transform: uppercase;
-  color: white;
+  text-transform: none;
 }
 
 .subtitle-a {
   text-decoration: none;
-  color: #4e4e4e;
+  color: #4f4f4f;
 }
 
 .line-mf {
@@ -498,7 +504,7 @@ a:hover {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(0, 0, 0);
   padding: 12px 0;
 }
 
@@ -602,7 +608,7 @@ a:hover {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #4e4e4e;
+  color: #000000;
 }
 
 .navbar .dropdown ul a i {
@@ -711,7 +717,7 @@ a:hover {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #4e4e4e;
+  color: #000000;
 }
 
 .navbar-mobile a:hover,
@@ -797,7 +803,7 @@ a:hover {
 }
 
 .hero .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -876,7 +882,7 @@ a:hover {
 }
 
 .skill-mf span {
-  color: #4e4e4e;
+  color: #000000;
 }
 
 .skill-mf .progress {
@@ -896,7 +902,7 @@ a:hover {
 --------------------------------------------------------------*/
 .service-box {
   background-color: #fff;
-  padding: 2.5rem 1.3rem;
+  padding: 1.5rem 0.5rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -928,13 +934,14 @@ a:hover {
 
 .service-box .s-title {
   font-size: 1.4rem;
-  text-transform: uppercase;
+  text-transform: none;
   text-align: center;
+  font-weight: bold;
   padding: 0.4rem 0;
 }
 
 .service-box .s-description {
-  color: #4e4e4e;
+  color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -1007,8 +1014,8 @@ a:hover {
 }
 
 .work-content .w-more {
-  color: #4e4e4e;
-  font-size: 0.8rem;
+  color: #000000;
+  font-size: 1rem;
 }
 
 .work-content .w-more .w-ctegory {
@@ -1030,7 +1037,7 @@ a:hover {
 }
 
 .w-title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 /*--------------------------------------------------------------
@@ -1325,7 +1332,7 @@ a:hover {
 }
 
 .card-blog .card-description {
-  color: #4e4e4e;
+  color: #000000;
 }
 
 .card-blog .post-author {
@@ -1333,7 +1340,7 @@ a:hover {
 }
 
 .card-blog .post-date {
-  color: #4e4e4e;
+  color: #000000;
   display: inline-block;
   float: right;
 }

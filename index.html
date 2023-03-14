@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Gerardo Iuliano </title>
+  <title>Geri </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link href="assets/img/logo_GI_2.png" rel="icon">
+  <link href="assets/img/logo_GI_2.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -30,7 +30,7 @@
   ======================================================== -->
 </head>
 
-<body onload="calculateAge(), getHeight()" style="background-color: #090909">
+<body onload="calculateAge(), checkDarkMode(), getHeight()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -38,7 +38,7 @@
 
       <h1 class="logo"><a href="index.html">Geri</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -47,6 +47,8 @@
           <li><a class="nav-link scrollto" href="#services">Timeline</a></li>
           <li><a class="nav-link scrollto" href="#work">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a  onclick="toggleDarkMode()"><span id="icon-mode" class="material-symbols-outlined"> dark_mode </span></a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -55,20 +57,21 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  <div style="background-color: #090909">
   <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Gerardo Iuliano</h1>
+          <h1 class="hero-title mb-4">I am Gerardo</h1>
           <p class="hero-subtitle"><span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
     </div>
   </div><!-- End Hero Section -->
-
+  </div>
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -78,10 +81,13 @@
           <div class="col-sm-12">
             <div class="box-shadow-full">
               <div class="row">
+                <!--
                 <div class="col-md-4">
+
                   <div class="about-img">
                     <img src="assets/img/testimonial-2.jpg" class="centerImg" alt="">
                   </div>
+
                   <div class="about-info">
                     <p><span class="title-s">Name: </span> <span>Gerardo Iuliano</span></p>
                     <p><span class="title-s">Age: </span> <span onload="calculateAge()" id="age"></span></p>
@@ -90,7 +96,8 @@
                     <p><span class="title-s">Phone: </span> <span>+39 3891872977</span></p>
                   </div>
                 </div>
-                <div class="col-md-8">
+                -->
+                <div class="col-md-12">
                   <div class="about-me pt-4 pt-md-0">
                     <div class="title-box-2">
                       <h5 class="title-left">
@@ -98,14 +105,15 @@
                       </h5>
                     </div>
                     <p class="lead">
-                      I am a Computer Science student at the University of Salerno.
+                      <h5>
+                        I am Gerardo Iuliano and I am <span style="color: black; font-weight: normal" class="lead" onload="calculateAge()" id="age"></span>.
+                      </h5>
                     </p>
                     <p class="lead">
-                      I developed interest towards this field during high school thanks to my computer science teacher. I have cultivated over time
-                      this passion enriching my cultural baggage.
+                      <h5>
+                        I am a Computer Science student at the University of Salerno.
+                      </h5>
                     </p>
-                    <p class="lead">
-                      I have a positive attitude, will and motivation in learning new technologies.                    </p>
                   </div>
                 </div>
               </div>
@@ -138,7 +146,7 @@
                 <a href="" target="_blank"><span class="ico-circle"><i class="bi bi-book"></i></span></a>
               </div>
               <div class="service-content">
-                <h2 class="s-title"> MASTER DEGREE </h2>
+                <h2 class="s-title"> Master Degree </h2>
                 <h4 class="s-description"> Software Engineering and IT Management </h4>
                 <h6 class="s-description"> University of Salerno Set 2021 - Now </h6>
                 <!--
@@ -148,9 +156,9 @@
 
                 -->
                 <a href="" target="_blank">
-                  <p class="s-description text-center">
-                    <b><u>More info</u></b>
-                  </p>
+                    <span class="material-symbols-outlined">
+                      expand_more
+                    </span>
                 </a>
               </div>
             </div>
@@ -161,17 +169,19 @@
                 <a href="assets/pdf/Tesi.pdf" target="_blank"><span class="ico-circle"><i class="bi bi-book"></i></span></a>
               </div>
               <div class="service-content">
-                <h2 class="s-title"> BACHELOR DEGREE </h2>
-                <h4 class="s-description"> Computer Science </h4>
+                <h2 class="s-title"> Bachelor Degree </h2>
+                <h4 class="s-description"> Computer <br> Science </h4>
                 <h6 class="s-description"> University of Salerno Set 2018 - Dec 2021 </h6>
+                <!--
                 <p class="s-description text-center">
                   <b>Thesis's title:</b> "Identification of molecular biomarkers to improve
                   diagnosing and monitoring the progression of Parkinson's"
                 </p>
+                -->
                 <a href="assets/pdf/Tesi.pdf" target="_blank">
-                  <p class="s-description text-center">
-                    <b><u>More info</u></b>
-                  </p>
+                  <span class="material-symbols-outlined">
+                      expand_more
+                    </span>
                 </a>
               </div>
             </div>
@@ -511,11 +521,11 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-8 " style="margin: auto">
             <div class="contact-mf">
               <div id="contact" class="box-shadow-full">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-8" >
                     <div class="title-box-2 pt-4 pt-md-0">
                       <h5 class="title-left">
                         Get in Touch
@@ -525,8 +535,8 @@
                       <p class="lead">
                       </p>
                       <ul class="list-ico">
-                        <li><span class="bi bi-phone"></span>     <a> (+39) 389 187 2977</a></li>
-                        <li><span class="bi bi-envelope"></span>  <a> gerardoiuliano99@gmail.com</a></li>
+                        <li><span class="bi bi-phone"></span>     <a href="tel:3891872977"> (+39) 389 187 2977</a></li>
+                        <li><span class="bi bi-envelope"></span>  <a href="mailto:gerardoiuliano99@gmail.com?subject=Personal Web Site&body=Dear Gerardo," target="_blank"> gerardoiuliano99@gmail.com</a></li>
                         <li><span class="bi bi-github"></span>    <a href="https://github.com/GerardoIuliano"> GerardoIuliano </a></li>
                         <li><span class="bi bi-linkedin"></span>  <a href="https://www.linkedin.com/in/gerardo-iuliano/"> Gerardo Iuliano </a></li>
                         <li><span class="bi bi-instagram"></span> <a href="https://instagram.com/gerardo__iuliano"> gerardo__iuliano </a></li>

@@ -1,28 +1,3 @@
-$(document).ready(function() {
-  element = document.getElementById("counter");
-  var visitCount = localStorage.getItem("page_view");
-// Check if page_view entry is present
-  if (visitCount) {
-    visitCount = Number(visitCount) + 1;
-    localStorage.setItem("page_view", visitCount);
-  } else {
-    visitCount = 1;
-    localStorage.setItem("page_view", 1);
-  }
-  element.innerHTML = visitCount;
-});
-
-function getJSessionId(){
-  var jsId = document.cookie.match(/JSESSIONID=[^;]+/);
-  console.log(jsId)
-  if(jsId != null) {
-    if (jsId instanceof Array)
-      jsId = jsId[0].substring(11);
-    else
-      jsId = jsId.substring(11);
-  }
-  return jsId;
-}
 
 function calculateAge() {
   var today = new Date();
@@ -46,6 +21,28 @@ function getHeight() {
     if(listCard[listCardKey] != undefined)
       listCard[listCardKey].style.height = max
   }
+}
 
+function checkDarkMode() {
+  console.log("RELOAD")
+  var darkMode = sessionStorage.getItem("darkMode");
+  if (darkMode == "true") {
+    document.getElementsByTagName("body")[0].classList.add("dark-mode");
+    document.getElementById("icon-mode").innerHTML="light_mode"
+  }
+}
+
+function toggleDarkMode() {
+  var body = document.getElementsByTagName("body")[0];
+  var isDarkMode = body.classList.contains("dark-mode");
+  if (isDarkMode) {
+    body.classList.remove("dark-mode");
+    sessionStorage.setItem("darkMode", "false");
+    document.getElementById("icon-mode").innerHTML="dark_mode"
+  } else {
+    body.classList.add("dark-mode");
+    sessionStorage.setItem("darkMode", "true");
+    document.getElementById("icon-mode").innerHTML="light_mode"
+  }
 }
 
