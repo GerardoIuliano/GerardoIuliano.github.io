@@ -29,7 +29,7 @@ body {
 }
 
 .dark-mode{
-  background-color: #000000;
+  background-color: #1B1C1E;
   color: #f5f5f5;
   font-family: "Sulphur Point";
 }
@@ -906,14 +906,14 @@ a:hover {
   padding: 0.1rem 0.5rem;
   padding: 0.5rem;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: rgba(0, 120, 255, 0.65);
+  background-color: rgb(0, 120, 255);
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
@@ -1076,14 +1076,14 @@ a:hover {
 
 .portfolio-details .portfolio-info {
   padding: 20px;
-  box-shadow: 0px 0 30px rgba(255, 0, 0, 0.08);
+  box-shadow: 0px 0 30px rgba(255, 0, 0, 0.1);
 }
 
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
 
