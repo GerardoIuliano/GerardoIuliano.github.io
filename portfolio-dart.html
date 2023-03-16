@@ -10,8 +10,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/G.png" rel="icon">
+  <link href="assets/img/G.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,29 +31,31 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="checkDarkMode()">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Geri</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <h1 class="logo"><a href="index.html">Geri</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Timeline</a></li>
-          <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+        <li><a class="nav-link scrollto" href="index.html#services">Timeline</a></li>
+        <li><a class="nav-link scrollto" href="index.html#work">Portfolio</a></li>
+        <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        <li><a class="nav-link scrollto" onclick="toggleDarkMode()"><span id="icon-mode" class="material-symbols-outlined"> dark_mode </span></a></li>
 
-    </div>
-  </header><!-- End Header -->
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
 
   <div class="hero hero-single route bg-image" style="background-image: url(assets/img/darts.png);">
     <div class="overlay-mf"></div>
@@ -80,8 +83,18 @@
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="portfolio-info">
-              <h2>Description</h2>
-              Il progetto ha ...
+              <h3>Description</h3>
+              <p>
+                DARTS (Detection And Refactoring of Test Smells) is an Intellij plug-in which implements a state-of-the-art detection mechanism to detect instances of three test smell types, i.e., General Fixture, Eager Test, and Lack of Cohesion of Test Methods, at commit-level and enables their automated refactoring through the integrated APIs provided by Intellij. It also provides a mechanism able to mine data from projects' repositories in order to evaluate if detected smells impact on change- and defect- proneness of the production classes.
+              </p>
+              <p>
+                <strong>The goal of project</strong> is improve DARTS by adding new test smell detectors such us Conditional Test Logic, Constructor Initialization, Duplicate Assert, Exception Handling, Ignored Test and Magic Number Test. The change consists in implementing new detectors for tests
+                smell. DARTS implements two types of detection, structural and textual. Researchers have devised tools and techniques to detect code smells in software systems. Most of them
+                are based on the analysis of the properties extractable from the source code (e.g., method calls) by means of a combination of structural metrics, while in recent years the use of alternative sources of information (i.e., historical and
+                textual analysis) have been explored, together with methodologies based on machine learning and search-based algorithms. The textual detection of code smells is able to identify code smells using a three step process, i.e., (i) textual
+                content extraction, (ii) application of IR normalization process, and (iii) application of specific heuristics in order to detect code smells related to promiscuous responsibilities. The detection
+                is going to base on structural information.
+              </p>
             </div>
           </div>
           <div class="col-lg-6">
@@ -91,7 +104,9 @@
                 <li><strong>Category</strong>: IntelliJ Plug-in</li>
                 <li><strong>Client</strong>: University</li>
                 <li><strong>Project date</strong>: June 2022</li>
-                <li><strong>GitHub</strong>: <a href="#"> www.example.com</a></li>
+                <li> <a class="nav-link scrollto" href="https://github.com/GerardoIuliano/DARTS"><strong>GitHub</strong>: github.com/GerardoIuliano/DARTS </a></li>
+                <li> <a class="nav-link scrollto" href="assets/pdf/DARTS_Paper.pdf" target="_blank"><strong>Paper</strong>: <u>link</u> </a></li>
+
               </ul>
             </div>
           </div>
@@ -100,7 +115,7 @@
             <div class="portfolio-info">
               <h3>Technologies</h3>
               <ul>
-                <li><strong>  </strong>: </li>
+                <li><strong> Java </strong> </li>
               </ul>
             </div>
           </div>
@@ -115,7 +130,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-
+            <p>© Copyright, tutti i diritti sono riservati</p>
           </div>
         </div>
       </div>
@@ -135,6 +150,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/utils.js"></script>
 
 </body>
 

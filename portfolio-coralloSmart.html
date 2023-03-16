@@ -10,8 +10,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/G.png" rel="icon">
+  <link href="assets/img/G.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,29 +31,31 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="checkDarkMode()">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Geri</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <h1 class="logo"><a href="index.html">Geri</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Timeline</a></li>
-          <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+        <li><a class="nav-link scrollto" href="index.html#services">Timeline</a></li>
+        <li><a class="nav-link scrollto" href="index.html#work">Portfolio</a></li>
+        <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        <li><a class="nav-link scrollto" onclick="toggleDarkMode()"><span id="icon-mode" class="material-symbols-outlined"> dark_mode </span></a></li>
 
-    </div>
-  </header><!-- End Header -->
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
 
   <div class="hero hero-single route bg-image" style="background-image: url(assets/img/logoCoralloSmart.png);">
     <div class="overlay-mf"></div>
@@ -80,8 +83,49 @@
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="portfolio-info">
-              <h2>Description</h2>
-              Il progetto ha ...
+              <h3>Description</h3>
+              <p>
+                In a 3-months exam simulation, I lead a team of 8 students as Project Manager for the development of “CoralloSmart”, a web app.
+              </p>
+              <p>
+              I was responsible for overseeing the planning, implementation, and tracking of a specific project, ensuring that it is completed on time, within budget, and meets the project's objectives.
+              </p>
+              <p>
+              Tasks:
+                <ul>
+                  <li>
+                    <strong>Defining project goals and objectives:</strong> work with stakeholders to define the project goals and objectives, which includes identifying the scope, timeline, and budget of the project.
+                  </li>
+                  <li>
+                    <strong>Developing a project plan:</strong> develop a detailed project plan, which outlines the tasks, resources, and timelines required to complete the project.
+                  </li>
+                  <li>
+                    <strong>Allocating resources:</strong> ensure that the necessary resources, including personnel, equipment, and budget, are available to complete the project.
+                  </li>
+                  <li>
+                    <strong>Monitoring project progress:</strong> monitor the progress of the project, tracking the completion of tasks, identifying and resolving issues, and reporting to stakeholders.
+                  </li>
+                  <li>
+                    <strong>Managing project risks:</strong> identify potential risks to the project and develops strategies to mitigate them.
+                  </li>
+                  <li>
+                    <strong>Managing project communications:</strong> ensure that communication is effective among team members, stakeholders, and other relevant parties, by setting up regular meetings, using appropriate communication channels, and updating project documentation.
+                  </li>
+                  <li>
+                    <strong>Managing project budget:</strong> track the project budget, making sure that it is used effectively, and makes adjustments as necessary.
+                  </li>
+                  <li>
+                    <strong>Managing project scope:</strong> ensure that the project stays within its defined scope and does not deviate from the objectives.
+                  </li>
+                  <li>
+                    <strong>Managing project quality:</strong> ensure that the project respects the standard quality.
+                  </li>
+
+                </ul>
+              </p>
+              <p>
+                It was a fantastic experience.
+              </p>
             </div>
           </div>
           <div class="col-lg-6">
@@ -91,7 +135,7 @@
                 <li><strong>Category</strong>: Web Application</li>
                 <li><strong>Client</strong>: University</li>
                 <li><strong>Project date</strong>: 17 Gen, 2023</li>
-                <li><strong>GitHub</strong>: <a href="#"> www.example.com </a></li>
+                <li> <a class="nav-link scrollto" href="https://github.com/GerardoIuliano/CoralloSmart"><strong>GitHub</strong>: github.com/GerardoIuliano/CoralloSmart </a></li>
               </ul>
             </div>
           </div>
@@ -99,16 +143,31 @@
           <div class="col-lg-6">
             <div class="portfolio-info">
               <h3>Technologies</h3>
-              <ul>
-                <li><strong>JavaServlet</strong>: </li>
-                <li><strong>HTML</strong>: </li>
-                <li><strong>CSS</strong>: </li>
-                <li><strong>Bootstrap</strong>: </li>
-                <li><strong>JSTL</strong>: </li>
-                <li><strong>MySQL</strong>: </li>
-                <li><strong>JUnit</strong>: </li>
-                <li><strong>Selenium</strong>: </li>
-              </ul>
+              <div class="row">
+                <div class="col-md-3">
+                  <ul>
+                    <li><strong>MySQL</strong> </li>
+                    <li><strong>Maven</strong> </li>
+                    <li><strong>Tomcat</strong> </li>
+                    <li><strong>Bootstrap</strong> </li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul>
+                    <li><strong>jQuery</strong> </li>
+                    <li><strong>JSTL</strong> </li>
+                    <li><strong>Lombok</strong> </li>
+                    <li><strong>Mockito</strong> </li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul>
+                    <li><strong>jUnit</strong> </li>
+                    <li><strong>Selenium</strong> </li>
+
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -122,7 +181,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-
+            <p>© Copyright, tutti i diritti sono riservati</p>
           </div>
         </div>
       </div>
@@ -142,6 +201,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/utils.js"></script>
 
 </body>
 

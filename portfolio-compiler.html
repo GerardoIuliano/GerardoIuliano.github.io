@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Complier</title>
+  <title>Compiler</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/G.png" rel="icon">
+  <link href="assets/img/G.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +31,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="checkDarkMode()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -42,11 +43,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
           <li><a class="nav-link scrollto" href="index.html#services">Timeline</a></li>
-          <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="index.html#work">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" onclick="toggleDarkMode()"><span id="icon-mode" class="material-symbols-outlined"> dark_mode </span></a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -80,8 +83,36 @@
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="portfolio-info">
-              <h2>Description</h2>
-              Il progetto ha ...
+              <h3>Description</h3>
+              A front-end compiler is responsible for taking source code written in a high-level programming language and translating it into an intermediate representation, which can then be further processed by other components of the compiler. The front-end typically includes the following components:
+              <p>
+              <ul>
+                <li>
+                  <strong>Lexer (also called a tokenizer)</strong>: This component takes the source code as input and breaks it down into a series of tokens. Tokens are the smallest units of meaning in a programming language, such as identifiers, keywords, operators, and punctuation marks.
+                </li>
+                <li>
+                  <strong>Parser</strong>: The parser takes the output of the lexer and uses it to build a parse tree, which is a hierarchical representation of the program's structure. The parser ensures that the code is syntactically correct and assigns meaning to each construct.
+                </li>
+                <li>
+                  <strong>Semantic Analyzer</strong>: This component takes the parse tree and performs semantic analysis to ensure that the program makes sense from a semantic perspective. It checks for things like type mismatches, undeclared variables, and other issues that may lead to errors.
+                </li>
+                <li>
+                  <strong>Intermediate Code Generator</strong>: This component takes the output of the semantic analyzer and generates intermediate code, which is a low-level representation of the program that can be further optimized before being compiled into machine code. <i> In this case Intermediate Code is C.</i>
+                </li>
+                <li>
+                  <strong>Symbol Table</strong>: This component maintains a record of all the symbols used in the program, such as variables, functions, and classes. The symbol table is used by the semantic analyzer to resolve references and ensure that the program is well-formed.
+                </li>
+                <li>
+                  <strong>Error Handler</strong>: This component is responsible for detecting and reporting errors in the source code. It provides error messages that help programmers identify and fix problems in their code.
+                </li>
+              </ul>
+              </p>
+              <p>
+                These components work together to ensure that the front-end of the compiler accurately represents the source code and prepares it for further processing by the back-end of the compiler.
+              </p>
+              <p>
+                <strong>Goal of the project</strong>: develop the front-end of the compiler
+              </p>
             </div>
           </div>
           <div class="col-lg-6">
@@ -91,7 +122,7 @@
                 <li><strong>Category</strong>: Front-end Compiler</li>
                 <li><strong>Client</strong>: University</li>
                 <li><strong>Project date</strong>: Gen 2022</li>
-                <li><strong>GitHub</strong>: <a href="#"> www.example.com </a></li>
+                <li> <a class="nav-link scrollto" href="https://github.com/GerardoIuliano/Compiler"><strong>GitHub</strong>: github.com/GerardoIuliano/Compiler </a></li>
               </ul>
             </div>
           </div>
@@ -116,7 +147,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-
+            <p>© Copyright, tutti i diritti sono riservati</p>
           </div>
         </div>
       </div>
@@ -136,7 +167,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/utils.js"></script>
 </body>
 
 </html>

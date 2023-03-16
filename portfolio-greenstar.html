@@ -10,8 +10,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/G.png" rel="icon">
+  <link href="assets/img/G.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,29 +31,31 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="checkDarkMode()">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Geri</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <h1 class="logo"><a href="index.html">Geri</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Timeline</a></li>
-          <li><a class="nav-link scrollto " href="index.html#work">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="index.html#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+        <li><a class="nav-link scrollto" href="index.html#services">Timeline</a></li>
+        <li><a class="nav-link scrollto" href="index.html#work">Portfolio</a></li>
+        <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        <li><a class="nav-link scrollto" onclick="toggleDarkMode()"><span id="icon-mode" class="material-symbols-outlined"> dark_mode </span></a></li>
 
-    </div>
-  </header><!-- End Header -->
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
 
   <div class="hero hero-single route bg-image" style="background-image: url(assets/img/logoGS.png);">
     <div class="overlay-mf"></div>
@@ -80,8 +83,8 @@
         <div class="row gy-4">
           <div class="col-lg-12">
             <div class="portfolio-info">
-              <h2>Description</h2>
-              Il progetto ha ...
+              <h3>Description</h3>
+              Accessible and usable interface, created following the principles of Gestalt and user experience.
             </div>
           </div>
           <div class="col-lg-6">
@@ -91,7 +94,7 @@
                 <li><strong>Category</strong>: Android Application</li>
                 <li><strong>Client</strong>: University</li>
                 <li><strong>Project date</strong>: Jun 2021</li>
-                <li><strong>GitHub</strong>: <a href="#"> www.example.com </a></li>
+                <li> <a class="nav-link scrollto" href="https://github.com/GerardoIuliano/GreenStars"><strong>GitHub</strong>: github.com/GerardoIuliano/GreenStar </a></li>
               </ul>
             </div>
           </div>
@@ -115,7 +118,7 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="copyright-box">
-
+            <p>© Copyright, tutti i diritti sono riservati</p>
           </div>
         </div>
       </div>
@@ -135,6 +138,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/utils.js"></script>
 
 </body>
 

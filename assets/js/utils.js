@@ -24,11 +24,20 @@ function getHeight() {
 }
 
 function checkDarkMode() {
-  console.log("RELOAD")
   var darkMode = sessionStorage.getItem("darkMode");
   if (darkMode == "true") {
     document.getElementsByTagName("body")[0].classList.add("dark-mode");
-    document.getElementById("icon-mode").innerHTML="light_mode"
+    document.getElementById("icon-mode").innerHTML="light_mode";
+    var list = document.getElementsByClassName("bookid");
+    for (let elementsByClassNameKey in list) {
+      if(list[elementsByClassNameKey] != undefined)
+        list[elementsByClassNameKey].style.color = "white";
+    }
+    var list = document.getElementsByClassName("cardid");
+    for (let elementsByClassNameKey in list) {
+      if(list[elementsByClassNameKey] != undefined)
+        list[elementsByClassNameKey].style.boxShadow =  "0px 0 30px rgb(0, 120, 255)";
+    }
   }
 }
 
@@ -39,10 +48,18 @@ function toggleDarkMode() {
     body.classList.remove("dark-mode");
     sessionStorage.setItem("darkMode", "false");
     document.getElementById("icon-mode").innerHTML="dark_mode"
+    var list = document.getElementsByClassName("bookid");
+    for (let elementsByClassNameKey in list) {
+      list[elementsByClassNameKey].style.color = "black";
+    }
   } else {
     body.classList.add("dark-mode");
     sessionStorage.setItem("darkMode", "true");
     document.getElementById("icon-mode").innerHTML="light_mode"
+    var list = document.getElementsByClassName("bookid");
+    for (let elementsByClassNameKey in list) {
+      list[elementsByClassNameKey].style.color = "white";
+    }
   }
 }
 

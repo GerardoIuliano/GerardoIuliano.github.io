@@ -17,6 +17,10 @@
   font-family:  "Code";
   src: url(modeseven-font/Modeseven-L3n5.ttf);
 }
+@font-face {
+  font-family:  "Sulphur Point";
+  src: url(Sulphur_Point/SulphurPoint-Regular.ttf);
+}
 
 body {
   background-color: #f5f5f5;
@@ -29,14 +33,10 @@ body {
   color: #f5f5f5;
   font-family: "Sulphur Point";
 }
-#icon-mode{
-  color: white;
-}
+
 h1,
 h2,
-h4,
-h5,
-h6 {
+h4 {
   color: #000000;
   font-family: "Sulphur Point";
 
@@ -76,7 +76,7 @@ a:hover {
 .box-shadow,
 .card-blog,
 .work-box,
-.service-box,
+
 .paralax-mf {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
@@ -196,7 +196,7 @@ a:hover {
 
 /*--/ Title Left /--*/
 .title-box-2 {
-  margin-bottom: 3rem;
+  margin-bottom: 0px;
 }
 
 .title-left {
@@ -654,7 +654,7 @@ a:hover {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #ffffff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -725,7 +725,9 @@ a:hover {
 .navbar-mobile li:hover>a {
   color: #0078ff;
 }
-
+.w-ctegory{
+  color: #0078ff;
+}
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -901,22 +903,22 @@ a:hover {
 # Services
 --------------------------------------------------------------*/
 .service-box {
-  background-color: #fff;
-  padding: 1.5rem 0.5rem;
+  padding: 0.1rem 0.5rem;
+  padding: 0.5rem;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
+  background-color: rgba(0, 120, 255, 0.65);
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
 .service-box .service-ico {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #1e1e1e;
 }
 
@@ -1068,9 +1070,13 @@ a:hover {
   background-color: #0078ff;
 }
 
+.card-pad{
+  padding-bottom: 0.5rem;
+}
+
 .portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
+  padding: 20px;
+  box-shadow: 0px 0 30px rgba(255, 0, 0, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1083,7 +1089,7 @@ a:hover {
 
 .portfolio-details .portfolio-info ul {
   list-style: none;
-  padding: 0;
+  padding: 20px;
   font-size: 15px;
 }
 
