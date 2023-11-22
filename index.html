@@ -1,379 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gerardo</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://gerardoiuliano.github.io/cleanfolio-minimal" class="link"
+          >Geri</a
+        >
+      </h3>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Geri </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/G.png" rel="icon">
-  <link href="assets/img/G.png" rel="apple-touch-icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-
-<body onload="calculateAge(), checkDarkMode(), getHeight()">
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Geri</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Timeline</a></li>
-          <li><a class="nav-link scrollto" href="#work">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" onclick="toggleDarkMode()"><span id="icon-mode" class="material-symbols-outlined"> dark_mode </span></a></li>
-
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
 
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Gerardo Iuliano.</span></h1>
+        <h2 class="about__role">Software Engineer</h2>
+        <p class="about__desc">
+          Consectetur neque sed quam molestiae consectetur nesciunt sit alias
+          Vitae libero perferendis reprehenderit optio veritatis Accusantium at
+          voluptatum cumque temporibus
+        </p>
+
+        <div class="about__contact center">
+          <a href="assets/pdf/CV___GerardoIuliano.pdf">
+            <span class="btn btn--outline">CV</span>
+          </a>
+
+          <a
+            href="https://github.com/GerardoIuliano"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/GerardoIuliano"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          
+          <div class="project">
+            <h3>Master Thesis</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoSA.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">Master Thesis</li>
+              <li class="project__stack-item">Oct 2023</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="project.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>SalernoAmica</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoSA.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">Cross Platform Apllication</li>
+              <li class="project__stack-item">Feb 2023</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="salernoamica.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>CoralloSmart</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoCoralloSmart.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">Web Application</li>
+              <li class="project__stack-item">Gen 2023</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="corallosmart.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>DARTS</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/darts.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">IntelliJ Plug-in</li>
+              <li class="project__stack-item">Jun 2022</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="dart.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Compiler</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/compiler.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">Front-end Compiler</li>
+              <li class="project__stack-item">Gen 2022</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="compiler.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>GreenStar</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoGS.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">Android Application</li>
+              <li class="project__stack-item">Jun 2021</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="greenstar.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Sorrento Marina</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/sorrentoMarina.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">Web Application</li>
+              <li class="project__stack-item">Feb 2021</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="sorrentomarina.html"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">C</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">Pyhton</li>
+          <li class="skills__list-item btn btn--plain">R</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>      
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">MySQL</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">Mongo DB</li>
+          <li class="skills__list-item btn btn--plain">Solidity</li>
+          <li class="skills__list-item btn btn--plain">Dart</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Flutter</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
+          <li class="skills__list-item btn btn--plain">jQuery</li>
+          <li class="skills__list-item btn btn--plain">jUnit</li>
+          <li class="skills__list-item btn btn--plain">Selenium</li>
+          <li class="skills__list-item btn btn--plain">Intellij IDEA</li>
+          <li class="skills__list-item btn btn--plain">VS Code</li>
+          <li class="skills__list-item btn btn--plain">Android Studio</li>
+          <li class="skills__list-item btn btn--plain">Eclipse</li>
+          <li class="skills__list-item btn btn--plain">R Studio</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">GitHub</li>
+          <li class="skills__list-item btn btn--plain">GitLab</li>
+          <li class="skills__list-item btn btn--plain">Maeven</li>
+          <li class="skills__list-item btn btn--plain">Gradle</li>
+          <li class="skills__list-item btn btn--plain">Scrum</li>
+          <li class="skills__list-item btn btn--plain">XP</li>
+          <li class="skills__list-item btn btn--plain">DevOps</li>
+          <li class="skills__list-item btn btn--plain">Kanban</li>
+          <li class="skills__list-item btn btn--plain">MS Project</li>
+          <li class="skills__list-item btn btn--plain">Trello</li>
+          <li class="skills__list-item btn btn--plain">Slack</li>
+         
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:rjshekhar.official@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/gerardoiuliano/GerardoIuliano.github.io"
+        class="link footer__link"
+      >
+        Created By Ctrl C & Ctrl V
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div style="background-color: #090909">
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h1 class="hero-title mb-4">I am Gerardo</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Software Engineer, Project Manager"></span></p>
-        </div>
-      </div>
     </div>
-  </div><!-- End Hero Section -->
-  </div>
-  <main id="main">
 
-    <!-- ======= About Me ======= -->
-    <section id="about" class="portfolio-details">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                About Me
-              </h3>
-              <p class="subtitle-a">
-                Some info
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-9" style="margin: auto">
-            <div class="portfolio-info">
-              <div class="title-box-2">
-                <h5 class="title-left">
-                  Hi,
-                </h5>
-              </div>
-              <div style="padding-top: 20px">
-                <p class="lead">
-                  I am Gerardo Iuliano and I am <span style= "font-weight: normal" class="lead" onload="calculateAge()" id="age"></span>.
-                </p>
-                <p class="lead">
-                  I am a Computer Science student at the University of Salerno, curriculum Software Engineering and IT Management.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About Me -->
-
-    <!-- Service -->
-    <section id="services" class="portfolio-details">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Timeline
-              </h3>
-              <p class="subtitle-a">
-                Some events
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-3">
-            <div class="portfolio-info ">
-              <div class="service-box">
-                <div class="service-ico">
-                  <a href="" target="_blank"><span class="ico-circle"><i  class="bi bi-book bookid"></i></span></a>
-                </div>
-              </div>
-              <div class="title-box-2" style="text-align: center">
-                <h3>
-                  Master Degree
-                </h3>
-                <p class="lead">
-                  <i>Software Engineering and IT Management</i>
-                </p>
-              </div>
-              <div class="w-more">
-                <span class="w-ctegory">University of Salerno</span><br>
-                <span class="w-ctegory">Now - Set 2021</span><br>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="portfolio-info ">
-              <div class="service-box">
-                <div class="service-ico">
-                  <a href="assets/pdf/Tesi.pdf" target="_blank"><span class="ico-circle"><i  class="bi bi-book bookid"></i></span></a>
-                </div>
-              </div>
-              <div class="title-box-2" style="text-align: center">
-                <h3>
-                  Bachelor Degree
-                </h3>
-                <p class="lead">
-                  <i>Computer </br>Science</i>
-                </p>
-              </div>
-              <div class="w-more">
-                <span class="w-ctegory">University of Salerno</span><br>
-                <span class="w-ctegory">Dec 2021 - Set 2018</span><br>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Service -->
-
-    <!-- Project Section -->
-    <section id="work" class="portfolio-details">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Portfolio
-              </h3>
-              <p class="subtitle-a">
-                Some works
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-3">
-            <div id="pr" class="portfolio-info">
-              <div class="title-box-2">
-                <h3>
-                  SalernoAmica
-                </h3>
-              </div>
-              <div>
-                <a href="portfolio-salernoAmica.html">
-                  <img style="width: 60%; margin-left: 20%; margin-right: 20%" src="assets/img/logoSA.png" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="w-more" style="padding-top: 5px">
-                <span class="w-ctegory">Cross Platform Apllication</span><br>
-                <span class="w-date">16 Feb 2023</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="portfolio-info">
-              <div class="title-box-2">
-                <h3>
-                  CoralloSmart
-                </h3>
-              </div>
-              <div>
-                <a href="portfolio-coralloSmart.html">
-                  <img style="width: 60%; margin-left: 20%; margin-right: 20%" src="assets/img/logoCoralloSmart.png" alt="" class="img-fluid">
-                </a>
-              </div>
-                <div class="w-more" style="padding-top: 5px">
-                  <span class="w-ctegory">Web Application</span><br>
-                  <span class="w-date">17 Gen 2023</span>
-                </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="portfolio-info">
-              <div class="title-box-2">
-                <h3>
-                  D.A.R.T.S 2.0
-                </h3>
-              </div>
-              <div>
-                <a href="portfolio-dart.html">
-                  <img style="width: 60%; margin-left: 20%; margin-right: 20%" src="assets/img/darts.png" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="w-more" style="padding-top: 5px">
-                <span class="w-ctegory">IntelliJ Plug-in</span><br>
-                <span class="w-date">Jun 2022</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="portfolio-info">
-              <div class="title-box-2">
-                <h3>
-                  MyFunCompiler
-                </h3>
-              </div>
-              <div>
-                <a href="portfolio-compiler.html">
-                  <img style="width: 60%; margin-left: 20%; margin-right: 20%" src="assets/img/compiler.png" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="w-more" style="padding-top: 5px">
-                <span class="w-ctegory">Front-end Compiler</span><br>
-                <span class="w-date">Gen 2022</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="portfolio-info">
-              <div class="title-box-2">
-                <h3>
-                  GreenStar
-                </h3>
-              </div>
-              <div>
-                <a href="portfolio-greenstar.html">
-                  <img style="width: 60%; margin-left: 20%; margin-right: 20%" src="assets/img/logoGS.png" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="w-more" style="padding-top: 5px">
-                <span class="w-ctegory">Android Application</span><br>
-                <span class="w-date">Jun 2021</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="portfolio-info">
-              <div class="title-box-2">
-                <h3>
-                  SorrentoMarina
-                </h3>
-              </div>
-              <div>
-                <a href="portfolio-sorrentoMarina.html">
-                  <img style="width: 60%; margin-left: 20%; margin-right: 20%" src="assets/img/sorrentoMarina.png" alt="" class="img-fluid">
-                </a>
-              </div>
-              <div class="w-more" style="padding-top:5px">
-                <span class="w-ctegory">Web Application</span><br>
-                <span class="w-date">Feb 2021</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Project Section -->
-
-    <!-- ======= Contact ======= -->
-    <section id="contact" class="portfolio-details">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Contact
-              </h3>
-              <p class="subtitle-a">
-                Some works
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-4">
-          <div class="col-lg-9 card-pad" style="margin: auto">
-            <div class="portfolio-info">
-              <div class="title-box-2">
-                <h5 class="title-left">
-                  Get in Touch
-                </h5>
-              </div>
-              <p class="lead">
-              <ul class="list-ico">
-                <li> <a class="nav-link scrollto" href="tel:3891872977"><span class="bi bi-phone"></span> (+39) 389 187 2977 </a></li>
-                <li> <a class="nav-link scrollto" href="mailto:gerardoiuliano99@gmail.com?subject=Personal Web Site&body=Dear Gerardo,"><span class="bi bi-envelope"></span> gerardoiuliano99@gmail.com </a></li>
-                <li> <a class="nav-link scrollto" href="https://github.com/GerardoIuliano"><span class="bi bi-github"></span> GerardoIuliano </a></li>
-                <li> <a class="nav-link scrollto" href="https://www.linkedin.com/in/gerardo-iuliano/"><span class="bi bi-linkedin"></span> Gerardo Iuliano </a></li>
-                <li> <a class="nav-link scrollto" href="https://instagram.com/gerardo__iuliano"><span class="bi bi-instagram"></span> gerardo__iuliano </a></li>
-              </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <div class="credits" style="font-size: 12px">
-              <p>© Copyright, tutti i diritti sono riservati</p>
-              <span>Autorizzo il trattamento dei miei dati personali ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 e del GDPR (Regolamento UE 2016/679).</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/js/jquery-3.6.4.min.js"></script>
-
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/utils.js"></script>
-
-  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

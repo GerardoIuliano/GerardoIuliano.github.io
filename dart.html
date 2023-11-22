@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Darts</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://gerardoiuliano.github.io" class="link"
+          >Geri</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      
+      <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12">
+            <div class="portfolio-info">
+              <h3>Description</h3>
+              <p>
+                DARTS (Detection And Refactoring of Test Smells) is an Intellij plug-in which implements a state-of-the-art detection mechanism to detect instances of three test smell types, i.e., General Fixture, Eager Test, and Lack of Cohesion of Test Methods, at commit-level and enables their automated refactoring through the integrated APIs provided by Intellij. It also provides a mechanism able to mine data from projects' repositories in order to evaluate if detected smells impact on change- and defect- proneness of the production classes.
+              </p>
+              <p>
+                <strong>The goal of project</strong> is improve DARTS by adding new test smell detectors such us Conditional Test Logic, Constructor Initialization, Duplicate Assert, Exception Handling, Ignored Test and Magic Number Test. The change consists in implementing new detectors for tests
+                smell. DARTS implements two types of detection, structural and textual. Researchers have devised tools and techniques to detect code smells in software systems. Most of them
+                are based on the analysis of the properties extractable from the source code (e.g., method calls) by means of a combination of structural metrics, while in recent years the use of alternative sources of information (i.e., historical and
+                textual analysis) have been explored, together with methodologies based on machine learning and search-based algorithms. The textual detection of code smells is able to identify code smells using a three step process, i.e., (i) textual
+                content extraction, (ii) application of IR normalization process, and (iii) application of specific heuristics in order to detect code smells related to promiscuous responsibilities. The detection
+                is going to base on structural information.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="portfolio-info">
+              <h3>Information</h3>
+              <ul>
+                <li><strong>Category</strong>: IntelliJ Plug-in</li>
+                <li><strong>Client</strong>: University</li>
+                <li><strong>Project date</strong>: June 2022</li>
+                <li> <a class="nav-link scrollto" href="https://github.com/GerardoIuliano/DARTS"><strong>GitHub</strong>: github.com/GerardoIuliano/DARTS </a></li>
+                <li> <a class="nav-link scrollto" href="assets/pdf/DARTS_Paper.pdf" target="_blank"><strong>Paper</strong>: <u>link</u> </a></li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="portfolio-info">
+              <h3>Technologies</h3>
+              <ul>
+                <li><strong> Java </strong> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Details Section -->
+      
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/gerardoiuliano/cleanfolio-minimal"
+        class="link footer__link"
+      >
+        Created By Ctrl C & Ctrl V
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
