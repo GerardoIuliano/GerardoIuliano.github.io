@@ -15,6 +15,13 @@
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      fetch('nav-bar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+    </script>
     <link rel="stylesheet" href="styles2.css" />
     <link rel="stylesheet" href="timeline.css">
     <link rel="icon" type="image/x-icon" href="assets/img/G.png">
@@ -28,54 +35,18 @@
         >
       </h3>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#education">Education</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#publications">Publications</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#hobby">Hobby</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <div id="navbar-placeholder"></div>
 
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
-      </nav>
     </header>
 
-    <main>
-      
-      
+    <main>    
       <!-- About -->
       <div class="about center">
         <h1>Hi, I am <span class="about__name">Gerardo Iuliano.</span></h1>
         <h3 class="about__role">wanna be</h3>
         <h2 class="about__role">Software Engineer</h2>
         <p class="about__desc">
-          I developed an interest in this field during high school thanks to my computer
-          science professor. I have cultivated this passion over time, enriching my cultural baggage.
-          I have a positive attitude, will, and motivation to learn new technologies.
+          I am a Ph.D. student at the SeSaLab, University of Salerno. My research focuses on the security of smart contracts on blockchain platforms, aiming to identify vulnerabilities, develop automated analysis techniques, and enhance the quality, reliability, and trustworthiness of Dapps.
         </p>
 
         <div class="about__contact center">
@@ -84,19 +55,13 @@
           </a>
 
           <a
-            href="https://github.com/GerardoIuliano"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
+            href="https://github.com/GerardoIuliano">
+            <span class="btn btn--outline">GitHub</span>
           </a>
 
           <a
-            href="https://linkedin.com/in/gerardo-iuliano"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
+            href="https://linkedin.com/in/gerardo-iuliano">
+            <span class="btn btn--outline">linkedin</span>
           </a>
         </div>
       </div>
@@ -108,10 +73,28 @@
         <div class="projects__grid">
           
           <div class="project">
+            <h3>PhD Degree</h3>
+            <h6>Software Engineering 4 Blockchain Security</h6>
+            <img style="width: 45%; margin-left: 20%; margin-right: 20%; margin-top: 5%; margin-bottom: 5%;" src="assets/img/logo_unisa.png">   
+            <h5>
+              <a href="assets/pdf/PhDProposal.pdf" class="link"> Proposal </a>
+            </h5>         
+            <p>
+              Toward Secure-by-design Smart Contract Development.
+            </p>        
+            <ul class="project__stack">
+              <li class="project__stack-item">Advisor Prof. Dario Di Nucci</li>
+              <li class="project__stack-item">Now - Nov 2024</li>
+            </ul>
+          </div>
+          
+          <div class="project">
             <h3>Master Degree</h3>
             <h6>Software Engineering and IT Management</h6>
             <img style="width: 45%; margin-left: 20%; margin-right: 20%; margin-top: 5%; margin-bottom: 5%;" src="assets/img/logo_unisa.png">   
-            <h5>Thesis</h5>         
+            <h5>
+              <a href="assets/pdf/MasterThesis.pdf" class="link"> Thesis </a>
+            </h5>         
             <p>
               Infrastructure as Code Defect Prediction Using Program Dependence Graph Metrics.
             </p>        
@@ -119,28 +102,15 @@
               <li class="project__stack-item">Supervisor Prof. Dario Di Nucci</li>
               <li class="project__stack-item">Oct 2023 - Sep 2021</li>
             </ul>
-
-            <a
-              href="https://github.com/GerardoIuliano/IaC_defect_prediction_using_pdg_metrics"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="assets/pdf/MasterThesis.pdf"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-            <i style='font-size:20px' class='fas'>&#xf15c;</i>
-            </a>
           </div>
 
           <div class="project">
             <h3>Bachelor Degree</h3>
-            <h6>Computer Science</h6>
+            <h6>Computer <br> Science</h6>
             <img style="width: 45%; margin-left: 20%; margin-right: 20%; margin-top: 5%; margin-bottom: 5%;" src="assets/img/logo_unisa.png">   
-            <h5>Thesis</h5>         
+            <h5>
+              <a href="assets/pdf/BachelorThesis.pdf" class="link"> Thesis </a>
+            </h5>          
             <p>
               Identification Of Molecular Biomarkers To Improve The Diagnosis And Monitor The Progression Of Parkinson's.
             </p>         
@@ -148,16 +118,10 @@
               <li class="project__stack-item">Supervisor Prof. Michele Risi</li>
               <li class="project__stack-item">Dec 2021 - Sep 2018</li>
             </ul>
-
-            
-            <a
-              href="assets/pdf/BachelorThesis.pdf"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-            <i style='font-size:20px' class='fas'>&#xf15c;</i>            </a>
           </div>
+
         </div>
+
       </section>
 
       <!-- Publication -->
@@ -165,25 +129,36 @@
       <h2 id="publications" class="section__title">Publication</h2>
 
       <section class="timeline">
-
+        
         <div class="timeline-item left">
+          <div class="timeline-item-content">
+            <h4>Automated Vulnerability Injection in Solidity Smart Contracts: A Mutation-Based Approach for Benchmark Development</h4>
+            <p><b>G. Iuliano</b>, L. Allocca, M. Cicalese, D. Di Nucci</p>
+            <span class="date">June 2025 - Research Track - EASE 2025</span><br>
+            <a href="assets/publications/Automated_Vulnerability_Injection_in_Solidity_Smart_Contracts__A_Mutation_Based_Approach_for_Benchmark_Development.pdf" class="link"> 
+              <span>Full paper</span>
+            </a>            
+          </div>
+        </div>
+
+        <div class="timeline-item right">
           <div class="timeline-item-content">
             <h4>Toward a Search-Based Approach to Support the Design of Security Tests for Malicious Network Traffic</h4>
             <p>D. La Gamba, <b>G. Iuliano</b>, G. Recupito, G. Giordano, F. Ferrucci, D. Di Nucci, F. Palomba</p>
-            <span class="date">April 2024 - SECUTE 2024 - EASE 2024</span>
-            <a href="assets/publications/Toward_a_Search_Based_Approach_to_Support_the_Design_of_Security_Tests_for_Malicious_Network_Traffic.pdf" class="link--icon"> 
-              <h6><u>Read more</u></h6>
+            <span class="date">April 2024 - SECUTE Workshop - EASE 2024</span><br>
+            <a href="assets/publications/Toward_a_Search_Based_Approach_to_Support_the_Design_of_Security_Tests_for_Malicious_Network_Traffic.pdf" class="link"> 
+              <span>Full paper</span>
             </a>            
           </div>
         </div>
         
-        <div class="timeline-item right">
+        <!-- <div class="timeline-item left">
           <div class="timeline-item-content">
             <h5>Stay tuned</h5>
             <p></p>
             <span class="date"></span>
           </div>
-        </div>
+        </div> -->
         
         <!-- Add more timeline items as needed -->
       </section>
@@ -196,26 +171,25 @@
         <div class="projects__grid">
           
           <div class="project">
+            <h3>Smartitude</h3>        
+            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/smartitude.png">            
+            <ul class="project__stack">
+              <li class="project__stack-item">PRIN Project</li>
+            </ul>
+            <a href="https://smartitude-project.github.io/" class="link">
+              Info
+            </a>
+          </div>
+
+        
+          <div class="project">
             <h3>IaC Defect Prediction</h3>        
             <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/lenteBug2.png">            
             <ul class="project__stack">
               <li class="project__stack-item">Master Thesis</li>
-              <li class="project__stack-item"> Oct 2023</li>
             </ul>
-
-            <a
-              href="https://github.com/GerardoIuliano/IaC_defect_prediction_using_pdg_metrics"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="iacDefectPrediction.html"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            <a href="iacDefectPrediction.html" class="link">
+              Info
             </a>
           </div>
 
@@ -224,22 +198,10 @@
             <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoSA.png">            
             <ul class="project__stack">
               <li class="project__stack-item">Cross Platform Application</li>
-              <li class="project__stack-item">Feb 2023</li>
             </ul>
-
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="salernoamica.html"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              href="salernoamica.html" class="link">
+              Info
             </a>
           </div>
 
@@ -248,22 +210,10 @@
             <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoCoralloSmart.png">            
             <ul class="project__stack">
               <li class="project__stack-item">Web Application</li>
-              <li class="project__stack-item">Gen 2023</li>
             </ul>
-
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="corallosmart.html"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              href="corallosmart.html" class="link">
+              Info
             </a>
           </div>
 
@@ -272,22 +222,10 @@
             <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/darts.png">            
             <ul class="project__stack">
               <li class="project__stack-item">IntelliJ Plug-in</li>
-              <li class="project__stack-item">Jun 2022</li>
             </ul>
-
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="dart.html"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              href="dart.html" class="link">
+              Info
             </a>
           </div>
 
@@ -296,22 +234,10 @@
             <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/compiler.png">            
             <ul class="project__stack">
               <li class="project__stack-item">Front-end Compiler</li>
-              <li class="project__stack-item">Gen 2022</li>
             </ul>
-
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="compiler.html"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              href="compiler.html" class="link">
+              Info
             </a>
           </div>
 
@@ -320,22 +246,10 @@
             <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoGS.png">            
             <ul class="project__stack">
               <li class="project__stack-item">Android Application</li>
-              <li class="project__stack-item">Jun 2021</li>
             </ul>
-
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="greenstar.html"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              href="greenstar.html" class="link">
+              Info
             </a>
           </div>
 
@@ -344,22 +258,10 @@
             <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/sorrentoMarina.png">            
             <ul class="project__stack">
               <li class="project__stack-item">Web Application</li>
-              <li class="project__stack-item">Feb 2021</li>
             </ul>
-
             <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="sorrentomarina.html"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              href="sorrentomarina.html" class="link">
+              Info
             </a>
           </div>
 
