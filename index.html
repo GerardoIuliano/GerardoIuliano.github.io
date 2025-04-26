@@ -15,13 +15,7 @@
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      fetch('nav-bar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-    </script>
+    
     <link rel="stylesheet" href="styles2.css" />
     <link rel="stylesheet" href="timeline.css">
     <link rel="icon" type="image/x-icon" href="assets/img/G.png">
@@ -35,7 +29,40 @@
         >
       </h3>
 
-      <div id="navbar-placeholder"></div>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#education">Education</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#publications">Publications</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#hobby">Hobby</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+    
+        <!-- <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+    
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button> -->
+      </nav>
 
     </header>
 
@@ -43,7 +70,7 @@
       <!-- About -->
       <div class="about center">
         <h1>Hi, I am <span class="about__name">Gerardo Iuliano.</span></h1>
-        <h3 class="about__role">wanna be</h3>
+        <h3 class="about__role"><i>wanna be</i></h3>
         <h2 class="about__role">Software Engineer</h2>
         <p class="about__desc">
           I am a Ph.D. student at the SeSaLab, University of Salerno. My research focuses on the security of smart contracts on blockchain platforms, aiming to identify vulnerabilities, develop automated analysis techniques, and enhance the quality, reliability, and trustworthiness of Dapps.
