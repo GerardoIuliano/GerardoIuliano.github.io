@@ -1,0 +1,86 @@
+[
+  {
+    "title": "The Role of Prompt Patterns in LLM-Based Smart Contract Vulnerability Detection",
+    "authors": ["Gerardo Iuliano", "Dario Di Nucci"],
+    "year": 2026,
+    "type": "Workshop",
+    "venue": "SECUTE (co-localated with ASE)",
+    "rank": "",
+    "track": "",
+    "location": "Munich, Germany",
+    "paper": "The Role of Prompt Patterns in LLM-Based Smart Contract Vulnerability Detection.pdf",
+    "reference": "https://doi.org/10.1145/3843781.3844627"
+  },
+  {
+    "title": "When LLM Architectures Meet Smart Contract Vulnerability Detection: a Replication Study",
+    "authors": ["Gerardo Iuliano", "Gabriele De Vito", "Dario Di Nucci"],
+    "year": 2026,
+    "type": "Conference",
+    "venue": "ICSME",
+    "rank": "A",
+    "track": "",
+    "location": "Benevento, Italy",
+    "paper": "When LLM Architectures Meet Smart Contract Vulnerability Detection- a Replication Study.pdf",
+    "reference": "https://conf.researchr.org/details/icsme-2026/icsme-2026-replication-and-negative-results/6/When-LLM-Architectures-Meet-Smart-Contract-Vulnerability-Detection-a-Replication-Stu"
+  },
+  {
+    "title": "MuSe: a Mutation Testing Plugin for the Remix IDE",
+    "authors": ["Gerardo Iuliano", "Daniele Carangelo", "Carmine Calabrese", "Dario Di Nucci"],
+    "year": 2026,
+    "type": "Conference",
+    "venue": "SANER",
+    "rank": "A",
+    "track": "Tool Demo",
+    "location": "Limassol, Cyprus",
+    "paper": "MuSe a Mutation Testing Plugin for the Remix IDE.pdf",
+    "reference": "https://conf.researchr.org/details/saner-2026/saner-2026-tool-demo-track/5/MuSe-a-Mutation-Testing-Plugin-for-the-Remix-IDE"
+  },
+  {
+    "title": "Smart contract vulnerabilities, tools, and benchmarks: An updated systematic literature review",
+    "authors": ["Gerardo Iuliano", "Dario Di Nucci"],
+    "year": 2026,
+    "type": "Journal",
+    "venue": "Journal of Systems and Software",
+    "rank": "Q1",
+    "track": "",
+    "location": "",
+    "paper": "Smart contract vulnerabilities, tools, and benchmarks- An updated systematic literature review.pdf",
+    "reference": "https://doi.org/10.1016/j.jss.2026.112788"
+  },
+  {
+    "title": "How Do Solidity Versions Affect Vulnerability Detection Tools? An Empirical Study",
+    "authors": ["Gerardo Iuliano", "Davide Corradini", "Michele Pasqua", "Matteo Cicalese", "Mariano Ceccato", "Dario Di Nucci"],
+    "year": 2026,
+    "type": "Journal",
+    "venue": "Empirical Software Engineering",
+    "rank": "Q1",
+    "track": "",
+    "location": "",
+    "paper": "How Do Solidity Versions Affect Vulnerability Detection Tools? An Empirical Study.pdf",
+    "reference": "https://arxiv.org/abs/2504.05515v2"
+  },
+  {
+    "title": "Automated Vulnerability Injection in Solidity Smart Contracts: A Mutation-Based Approach for Benchmark Development",
+    "authors": ["Gerardo Iuliano", "Luigi Allocca", "Matteo Cicalese", "Dario Di Nucci"],
+    "year": 2025,
+    "type": "Conference",
+    "venue": "EASE",
+    "rank": "A",
+    "track": "Research Track",
+    "location": "Istanbul, Türkiye",
+    "paper": "Automated Vulnerability Injection in Solidity Smart Contracts A Mutation Based Approach for Benchmark Development.pdf",
+    "reference": "https://conf.researchr.org/track/ease-2025/ease-2025-research-papers"
+  },
+  {
+    "title": "Toward a Search-Based Approach to Support the Design of Security Tests for Malicious Network Traffic",
+    "authors": ["Davide La Gamba", "Gerardo Iuliano", "Gilberto Recupito", "Giammaria Giordano", "Filomena Ferrucci", "Dario Di Nucci", "Fabio Palomba"],
+    "year": 2024,
+    "type": "Conference",
+    "venue": "EASE",
+    "rank": "A",
+    "track": "",
+    "location": "Salerno, Italy",
+    "paper": "Toward a Search Based Approach to Support the Design of Security Tests for Malicious Network Traffic.pdf",
+    "reference": "https://doi.org/10.1145/3661167.3661288"
+  }
+]

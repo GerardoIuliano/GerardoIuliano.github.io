@@ -1,436 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta name="google-site-verification" content="lS5ht0W30UA01uyonxL_YzusXJ73EFLmknM4Rxm2Woc" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    
-    <link rel="stylesheet" href="styles2.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="timeline.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/G.png">
-    <title>Geri</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="lS5ht0W30UA01uyonxL_YzusXJ73EFLmknM4Rxm2Woc">
+    <meta name="description" content="Gerardo Iuliano, PhD student at the University of Salerno researching smart contract security and automated software analysis.">
+    <title>Gerardo Iuliano · Smart Contract Security Research</title>
+    <link rel="icon" href="assets/img/G.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/academic.css">
+    <script src="assets/js/publications.js" defer></script>
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://gerardoiuliano.github.io" class="link"
-          >Geri</a
-        >
-      </h3>
-
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html#education">Education</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html#publications">Publications</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html#hobby">Hobby</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="index.html#contact">Contact</a>
-          </li>
-        </ul>
-    
-        <!-- <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-    
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button> -->
-      </nav>
-
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">GI</span> Gerardo Iuliano</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>    
-      <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Gerardo Iuliano.</span></h1>
-        <h3 class="about__role"><i>wanna be</i></h3>
-        <h2 class="about__role">Software Engineer</h2>
-        <p class="about__desc">
-          I am a Ph.D. student at the SeSaLab, University of Salerno. My research focuses on the security of smart contracts on blockchain platforms, aiming to identify vulnerabilities, develop automated analysis techniques, and enhance the quality, reliability, and trustworthiness of Dapps.
-        </p>
-
-        <div class="about__contact center">
-          <a href="assets/pdf/CV___GerardoIuliano.pdf">
-            <span class="btn btn--outline">CV</span>
-          </a>
-
-          <a
-            href="https://github.com/GerardoIuliano">
-            <span class="btn btn--outline">GitHub</span>
-          </a>
-
-          <a
-            href="https://linkedin.com/in/gerardo-iuliano">
-            <span class="btn btn--outline">linkedin</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- Education -->
-      <section id="education" class="section projects">
-        <h2 class="section__title">Education</h2>
-
-        <div class="projects__grid">
-          
-          <div class="project">
-            <h3>PhD Degree</h3>
-            <h6>Software Engineering 4 Blockchain Security</h6>
-            <img style="width: 45%; margin-left: 20%; margin-right: 20%; margin-top: 5%; margin-bottom: 5%;" src="assets/img/logo_unisa.png">   
-            <h5>
-              <a href="assets/pdf/PhDProposal.pdf" class="link"> Proposal </a>
-            </h5>         
-            <p>
-              Toward Secure-by-design Smart Contract Development.
-            </p>        
-            <ul class="project__stack">
-              <li class="project__stack-item">Advisor Prof. Dario Di Nucci</li>
-              <li class="project__stack-item">Now - Nov 2024</li>
+    <main id="main">
+      <section class="hero" id="about" aria-labelledby="name">
+        <div class="shell hero-inner">
+          <div class="hero-copy">
+            <h1 id="name">Gerardo<br>Iuliano<span>.</span></h1>
+            <p class="hero-role">PhD student in software engineering</p>
+            <p class="hero-location">University of Salerno · Fisciano, Italy</p>
+            <p class="hero-description">I study the security of blockchain smart contracts and develop automated analysis techniques to detect vulnerabilities and help build more reliable decentralized applications.</p>
+            <ul class="hero-links">
+              <li><a class="button button-primary" href="assets/pdf/CV___GerardoIuliano.pdf">Read my CV</a></li>
+              <li><a class="button button-quiet" href="https://github.com/GerardoIuliano">GitHub</a></li>
+              <li><a class="button button-quiet" href="https://linkedin.com/in/gerardo-iuliano">LinkedIn</a></li>
             </ul>
           </div>
-          
-          <div class="project">
-            <h3>Master Degree</h3>
-            <h6>Software Engineering and IT Management</h6>
-            <img style="width: 45%; margin-left: 20%; margin-right: 20%; margin-top: 5%; margin-bottom: 5%;" src="assets/img/logo_unisa.png">   
-            <h5>
-              <a href="assets/pdf/MasterThesis.pdf" class="link"> Thesis </a>
-            </h5>         
-            <p>
-              Infrastructure as Code Defect Prediction Using Program Dependence Graph Metrics.
-            </p>        
-            <ul class="project__stack">
-              <li class="project__stack-item">Supervisor Prof. Dario Di Nucci</li>
-              <li class="project__stack-item">Oct 2023 - Sep 2021</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <h3>Bachelor Degree</h3>
-            <h6>Computer <br> Science</h6>
-            <img style="width: 45%; margin-left: 20%; margin-right: 20%; margin-top: 5%; margin-bottom: 5%;" src="assets/img/logo_unisa.png">   
-            <h5>
-              <a href="assets/pdf/BachelorThesis.pdf" class="link"> Thesis </a>
-            </h5>          
-            <p>
-              Identification Of Molecular Biomarkers To Improve The Diagnosis And Monitor The Progression Of Parkinson's.
-            </p>         
-            <ul class="project__stack">
-              <li class="project__stack-item">Supervisor Prof. Michele Risi</li>
-              <li class="project__stack-item">Dec 2021 - Sep 2018</li>
-            </ul>
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- Publication -->
-
-      <h2 id="publications" class="section__title">Publication</h2>
-
-      <section class="timeline">
-        
-        <div class="timeline-item left">
-          <div class="timeline-item-content">
-            <h4>Automated Vulnerability Injection in Solidity Smart Contracts: A Mutation-Based Approach for Benchmark Development</h4>
-            <p><b>G. Iuliano</b>, L. Allocca, M. Cicalese, D. Di Nucci</p>
-            <span class="date">June 2025 - Research Track - EASE 2025</span><br>
-            <a href="assets/publications/Automated_Vulnerability_Injection_in_Solidity_Smart_Contracts__A_Mutation_Based_Approach_for_Benchmark_Development.pdf" class="link"> 
-              <span>Full paper</span>
-            </a>            
-          </div>
-        </div>
-
-        <div class="timeline-item right">
-          <div class="timeline-item-content">
-            <h4>Toward a Search-Based Approach to Support the Design of Security Tests for Malicious Network Traffic</h4>
-            <p>D. La Gamba, <b>G. Iuliano</b>, G. Recupito, G. Giordano, F. Ferrucci, D. Di Nucci, F. Palomba</p>
-            <span class="date">April 2024 - SECUTE Workshop - EASE 2024</span><br>
-            <a href="assets/publications/Toward_a_Search_Based_Approach_to_Support_the_Design_of_Security_Tests_for_Malicious_Network_Traffic.pdf" class="link"> 
-              <span>Full paper</span>
-            </a>            
-          </div>
-        </div>
-        
-        <!-- <div class="timeline-item left">
-          <div class="timeline-item-content">
-            <h5>Stay tuned</h5>
-            <p></p>
-            <span class="date"></span>
-          </div>
-        </div> -->
-        
-        <!-- Add more timeline items as needed -->
-      </section>
-
-
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
-
-        <div class="projects__grid">
-          
-          <div class="project">
-            <h3>Smartitude</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/smartitude.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">PRIN Project</li>
-            </ul>
-            <a href="https://smartitude-project.github.io/" class="link">
-              Info
-            </a>
-          </div>
-
-        
-          <div class="project">
-            <h3>IaC Defect Prediction</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/lenteBug2.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">Master Thesis</li>
-            </ul>
-            <a href="iacDefectPrediction.html" class="link">
-              Info
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>SalernoAmica</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoSA.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">Cross Platform Application</li>
-            </ul>
-            <a
-              href="salernoamica.html" class="link">
-              Info
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>CoralloSmart</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoCoralloSmart.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">Web Application</li>
-            </ul>
-            <a
-              href="corallosmart.html" class="link">
-              Info
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>DARTS</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/darts.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">IntelliJ Plug-in</li>
-            </ul>
-            <a
-              href="dart.html" class="link">
-              Info
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Compiler</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/compiler.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">Front-end Compiler</li>
-            </ul>
-            <a
-              href="compiler.html" class="link">
-              Info
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>GreenStar</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/logoGS.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">Android Application</li>
-            </ul>
-            <a
-              href="greenstar.html" class="link">
-              Info
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Sorrento Marina</h3>        
-            <img style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/sorrentoMarina.png">            
-            <ul class="project__stack">
-              <li class="project__stack-item">Web Application</li>
-            </ul>
-            <a
-              href="sorrentomarina.html" class="link">
-              Info
-            </a>
-          </div>
-
-          
+          <img class="hero-portrait" src="assets/img/fotosesa.jpg" alt="Portrait of Gerardo Iuliano" width="400" height="400">
         </div>
       </section>
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">C</li>
-          <li class="skills__list-item btn btn--plain">C++</li>
-          <li class="skills__list-item btn btn--plain">Java</li>
-          <li class="skills__list-item btn btn--plain">Pyhton</li>
-          <li class="skills__list-item btn btn--plain">R</li>
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>      
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">MySQL</li>
-          <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">Mongo DB</li>
-          <li class="skills__list-item btn btn--plain">Solidity</li>
-          <li class="skills__list-item btn btn--plain">Dart</li>
-          <li class="skills__list-item btn btn--plain">Docker</li>
-          <li class="skills__list-item btn btn--plain">Flutter</li>
-          <li class="skills__list-item btn btn--plain">Bootstrap</li>
-          <li class="skills__list-item btn btn--plain">jQuery</li>
-          <li class="skills__list-item btn btn--plain">jUnit</li>
-          <li class="skills__list-item btn btn--plain">Selenium</li>
-          <li class="skills__list-item btn btn--plain">Intellij IDEA</li>
-          <li class="skills__list-item btn btn--plain">VS Code</li>
-          <li class="skills__list-item btn btn--plain">Android Studio</li>
-          <li class="skills__list-item btn btn--plain">Eclipse</li>
-          <li class="skills__list-item btn btn--plain">R Studio</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">GitHub</li>
-          <li class="skills__list-item btn btn--plain">GitLab</li>
-          <li class="skills__list-item btn btn--plain">Maeven</li>
-          <li class="skills__list-item btn btn--plain">Gradle</li>
-          <li class="skills__list-item btn btn--plain">Scrum</li>
-          <li class="skills__list-item btn btn--plain">XP</li>
-          <li class="skills__list-item btn btn--plain">DevOps</li>
-          <li class="skills__list-item btn btn--plain">Kanban</li>
-          <li class="skills__list-item btn btn--plain">MS Project</li>
-          <li class="skills__list-item btn btn--plain">Trello</li>
-          <li class="skills__list-item btn btn--plain">Slack</li>
-         
-        </ul>
-      </section>
-      
-      <!--Hobby-->
-      <section id="hobby" class="section projects">
-        <h2 class="section__title">Hobby</h2>
-        <h6 class="section__title">Wood</h6>
-
-        <div class="projects__grid">
-          
-          <div class="project">
-            <h3>Mini Pallet</h3>        
-            <img id="imghobby1" style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/1.png">            
-            <ul class="project__stack">
-              <!-- <li class="project__stack-item">...</li> -->
-            </ul>
-            
-            <a
-              aria-label="live preview"
-              class="link link--icon"
-              onclick="nextImage('imghobby1',1)"
-            >
-            <i style='font-size:24px' class='fas'>&#xf105;</i>
-            </a>
+      <section class="publications-section" id="publications" aria-labelledby="publications-title">
+        <div class="shell section">
+          <div class="publications-header">
+            <h2 id="publications-title">Publications</h2>
+            <form id="publication-filters" class="filters" role="search" aria-label="Filter publications" hidden>
+              <label for="publication-search" class="visually-hidden">Search publications</label>
+              <input id="publication-search" type="search" placeholder="Search papers…">
+              <label for="publication-type" class="visually-hidden">Publication type</label>
+              <select id="publication-type"><option value="">All types</option></select>
+            </form>
           </div>
-
-          <div class="project">
-            <h3>Bread Basket</h3>        
-            <img id="imghobby2" style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/21.png">            
-            <ul class="project__stack">
-              <!-- <li class="project__stack-item">...</li> -->
-            </ul>
- 
-            <a
-              aria-label="live preview"
-              class="link link--icon"
-              onclick="nextImage('imghobby2',21)"
-            >
-            <i style='font-size:24px' class='fas'>&#xf105;</i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Pod Basket</h3>        
-            <img id="imghobby3" style="width: 60%; margin-left: 20%; margin-right: 20%; margin-top: 10%;" src="assets/img/11.png">            
-            <ul class="project__stack">
-              <!-- <li class="project__stack-item">...</li> -->
-            </ul>
-            
-            <a
-              aria-label="live preview"
-              class="link link--icon"
-              onclick="nextImage('imghobby3',11)"
-            >
-            <i style='font-size:24px' class='fas'>&#xf105;</i>
-            </a>
-          </div>
-
-          
+          <p id="publication-status" role="status"></p>
+          <noscript><p>Enable JavaScript to browse publications, or view the <a href="publications.json">publication data</a>.</p></noscript>
+          <div id="publication-list"></div>
         </div>
       </section>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:gerardoiuliano99@gmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
-        <br>
-        <a href="tel:+39 3891872977">
-          <span class="btn btn--outline">Call me</span>
-        </a>
+      <section class="shell section section-grid" id="education" aria-labelledby="education-title">
+        <div class="section-intro">
+          <h2 id="education-title">Education</h2>
+          <p>University of Salerno</p>
+        </div>
+        <ol class="education-list">
+          <li class="education-entry">
+            <p class="date"><time datetime="2024-11">Nov 2024</time> – Present</p>
+            <div>
+              <h3>PhD in Software Engineering</h3>
+              <p>Researching secure-by-design smart contract development.</p>
+              <p class="education-advisor">Advisor · Prof. Dario Di Nucci</p>
+            </div>
+            <a class="small-link" href="assets/pdf/PhDProposal.pdf">Proposal<span class="visually-hidden"> for the PhD (PDF)</span></a>
+          </li>
+          <li class="education-entry">
+            <p class="date"><time datetime="2021-09">Sep 2021</time> – <time datetime="2023-10">Oct 2023</time></p>
+            <div>
+              <h3>Master’s in Software Engineering and IT Management</h3>
+              <p>Infrastructure as Code defect prediction using program dependence graph metrics.</p>
+              <p class="education-advisor">Supervisor · Prof. Dario Di Nucci</p>
+            </div>
+            <a class="small-link" href="assets/pdf/MasterThesis.pdf">Thesis<span class="visually-hidden"> for the master’s degree (PDF)</span></a>
+          </li>
+          <li class="education-entry">
+            <p class="date"><time datetime="2018-09">Sep 2018</time> – <time datetime="2021-12">Dec 2021</time></p>
+            <div>
+              <h3>Bachelor’s in Computer Science</h3>
+              <p>Identifying molecular biomarkers to improve diagnosis and monitor the progression of Parkinson’s disease.</p>
+              <p class="education-advisor">Supervisor · Prof. Michele Risi</p>
+            </div>
+            <a class="small-link" href="assets/pdf/BachelorThesis.pdf">Thesis<span class="visually-hidden"> for the bachelor’s degree (PDF)</span></a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="shell section contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <a href="mailto:geiuliano@unisa.it">geiuliano@unisa.it</a>
       </section>
     </main>
 
-    <footer class="footer">
-      <a
-        href="#"
-        class="link footer__link"
-      >
-        I hereby consent to the processing of the data I provided in this Portfolio.
-      </a>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>Gerardo Iuliano</span>
+        <a href="#top">Back to top</a>
+      </div>
     </footer>
-
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    </div>
-
-    <script src="./script.js"></script>
-    <script src="./utils.js"></script>
   </body>
 </html>
